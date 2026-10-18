@@ -5,7 +5,7 @@ const express = require('express');
 // سيرفر المنفذ لـ Render
 const app = express();
 const PORT = process.env.PORT || 3000;
-app.get('/', (req, res) => res.send('المدير شغال 100%!'));
+app.get('/', (req, res) => res.send('ليث شغال 100%!'));
 app.listen(PORT, () => console.log(`Listening on port ${PORT}`));
 
 // تهيئة ديسكورد و Groq
@@ -38,7 +38,7 @@ client.on('messageCreate', async (message) => {
                     content: message.content
                 }
             ],
-            model: 'llama-3.1-8b-instant',
+            model: 'llama3-8b-8192',
         });
 
         const replyText = completion.choices[0]?.message?.content || 'يا ولد ما فهمت وش تقصد!';
