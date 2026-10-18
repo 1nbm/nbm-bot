@@ -38,7 +38,7 @@ client.on('messageCreate', async (message) => {
                     content: message.content
                 }
             ],
-            model: 'llama-3.3-70b-versatile',
+            model: 'llama-3.1-8b-instant',
         });
 
         const replyText = completion.choices[0]?.message?.content || 'يا ولد ما فهمت وش تقصد!';
