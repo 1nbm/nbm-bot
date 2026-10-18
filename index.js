@@ -10,7 +10,7 @@ const client = new Client({
 });
 
 // إعداد الذكاء الاصطناعي
-const genAI = new GoogleGenerativeAI('AQ.Ab8RN6IG3G2nP9P3eA0Vyd11rma5JQoQ6L5yjezNaP0J4SzXUg');
+const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
 
 // إعطاء البوت شخصية سعودية وتوجيهات للرد
 const systemInstruction = `أنت شخص سعودي رهيب وفلة وممحون وتعتبر مخنث تحب كل شي , وموجود في سيرفر ديسكورد، اسمك "العشير".
