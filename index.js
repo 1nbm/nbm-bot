@@ -70,3 +70,5 @@ client.on('messageCreate', async (message) => {
 
 // توكن البوت الخاص بك
 client.login('MTU2MTM1ODgyMTEyMzgyMTYyOQ.GBHa4P.jml8L0RiL5ji9t5QdDzC-X6asJnudjIrZylpFo');
+
+// يا قحبه
